@@ -1,5 +1,51 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+Ember JS Frontend - SPA Single Page Application<br><br>
 
+what to do to start with Ember ...<br><br>
+
+starting a hetzner cloud server with debian Linux, Apache-Webserver or Nginx, Mariadb Mysql-Server<br><br>
+
+building the deployment - odl school style<br><br>
+
+Rsync over SSH with key authentication <br><br>
+
+ember build
+<br><br>
+Built project successfully. Stored in "dist/".
+<br><br>
+rsync --progress -avz -e "ssh -i .ssh/id_rsa" /Users/user_name/ember_project/dist/  username@your-domain:/var/www/ember_project/
+<br><br>
+
+ember install ember-bootstrap<br><br>
+
+############################## Backend JSON REST API with Laravel ###############################<br><br>
+
+composer global require laravel/installer
+<br><br>
+laravel new blog
+<br><br>
+alternativ with a older Laravel Version (5.8)
+<br><br>
+composer create-project --prefer-dist laravel/laravel blog "5.8.*"
+<br><br>
+php artisan key:generate
+<br><br>
+first check, if the system is running: php artisan serve
+<br><br>
+http://127.0.0.1:8000
+<br><br>
+composer require cloudcreativity/laravel-json-api
+<br><br>
+composer require --dev "cloudcreativity/json-api-testing:^1.2|^2.0"
+<br><br>
+php artisan make:json-api
+<br><br>
+php artisan make:json-api:resource posts
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 {{outlet}}
