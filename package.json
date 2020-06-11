@@ -58,5 +58,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-cli-update": "^0.54.6",
+    "npx": "^10.2.2"
   }
 }
