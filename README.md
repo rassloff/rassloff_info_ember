@@ -1,5 +1,8 @@
 # ember-rassloff-info
 
+# using and learning with
+(https://www.balinterdi.com/rock-and-roll-with-emberjs/)
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
