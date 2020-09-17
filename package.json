@@ -2,10 +2,10 @@
   "name": "ember-rassloff-info",
   "version": "0.0.1",
   "private": true,
-  "description": "Small description for ember-rassloff-info goes here",
+  "description": "SPA with Ember-JS, Small description for ember-rassloff-info goes here",
   "repository": "",
   "license": "MIT",
-  "author": "",
+  "author": "Thomas Rassloff",
   "directories": {
     "doc": "doc",
     "test": "tests"
