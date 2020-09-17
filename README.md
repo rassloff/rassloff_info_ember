@@ -1,5 +1,7 @@
 # ember-rassloff-info
 
+
+
 # using and learning with
 (https://www.balinterdi.com/rock-and-roll-with-emberjs/)
 
@@ -50,6 +52,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Deploying
 
 Specify what it takes to deploy your app.
+
+rsync -av dist/ username@rassloff.info:/var/www/ember_directory
 
 ## Further Reading / Useful Links
 
