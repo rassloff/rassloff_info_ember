@@ -1,7 +1,5 @@
 # ember-rassloff-info
 
-
-
 # using and learning with
 (https://www.balinterdi.com/rock-and-roll-with-emberjs/)
 
