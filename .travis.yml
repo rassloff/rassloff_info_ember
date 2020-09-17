@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "10"
 
-dist: trusty
+dist: xenial
 
 addons:
   chrome: stable
@@ -21,5 +21,12 @@ branches:
   only:
     - master
 
+<<<<<<< HEAD
+=======
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+
+>>>>>>> e99b7b6... v3.18.0...v3.21.2
 script:
   - npm test
