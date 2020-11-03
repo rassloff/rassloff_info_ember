@@ -60,6 +60,7 @@
     "edition": "octane"
   },
   "dependencies": {
+    "core-js": "^3",
     "ember-cli-update": "^0.54.6",
     "npx": "^10.2.2"
   }
