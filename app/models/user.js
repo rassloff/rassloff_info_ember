@@ -13,6 +13,7 @@ export default class UserModel extends Model {
 
   @hasMany('event')
   events;
+
   @hasMany('image')
   images;
 }
