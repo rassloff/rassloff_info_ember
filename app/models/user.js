@@ -9,6 +9,10 @@ export default class UserModel extends Model {
   @attr('string')
   lastName;
 
+  @attr('string')
+  name;
+  @attr('string')
+  password;
   // Relationships
 
   @hasMany('event')

@@ -19,4 +19,5 @@ Router.map(function() {
   this.route('users', function() {});
 
   this.route('readme');
+  this.route('login');
 });

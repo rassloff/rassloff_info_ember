@@ -1,0 +1,18 @@
+<h1>please login</h1>
+
+<form {{on "submit" this.login}}>
+  <lable for="name">Username</lable>
+  <input type="text" name="name" value="c1312asd" {{on "change" (fn this.update "name")}}>
+  <lable for="password">Password</lable>
+  <input type="password" name="password" value="12345asdfghj" {{on "change" (fn this.update "password")}}>
+  <input type="submit" value="login">
+</form>
+
+{{#if @error}}
+  <p>
+    <strong>
+    {{@error}}
+    </strong>
+  </p>
+{{/if}}
+{{outlet}}

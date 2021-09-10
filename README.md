@@ -17,3 +17,4 @@ rsync -av dist/ username@rassloff.info:/var/www/ember_rassloff_info
 
 https://www.positronx.io/laravel-rest-api-with-passport-authentication-tutorial/
 
+https://www.youtube.com/watch?v=bSWN4_EbTPI
