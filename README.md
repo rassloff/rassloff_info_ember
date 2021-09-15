@@ -1,5 +1,11 @@
 # ember-rassloff-info
 
+using 
+
+https://github.com/simplabs/ember-simple-auth
+
+yarn add ember-simple-auth
+
 update 19.07.2021
 
 ### Building
