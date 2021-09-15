@@ -7,8 +7,8 @@ export default class LoginController extends Controller {
   @service session;
 
   @tracked errror;
-  @tracked name = 'c1312asd';
-  @tracked password = '12345asdfghj';
+  @tracked name; // = 'c1312asd';
+  @tracked password; // = '12345asdfghj';
 
 
 
@@ -16,14 +16,13 @@ export default class LoginController extends Controller {
   @action
   async login(event) {
 
-    console.log('??? login ???');
-    console.log('??? login ???', this.name);
-    console.log('??? event login ???', event);
+    //console.log('??? login ???');
+    //console.log('??? login ???', this.name);
+    //console.log('??? event login ???', event);
 
     event.preventDefault();
     try {
       await this.session.authenticate('authenticator:token', this.name, this.password);
-      //await this.session.authenticate(this.name, this.password);
     } catch(error) {
       this.error = error;
     }
