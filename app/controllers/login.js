@@ -10,18 +10,10 @@ export default class LoginController extends Controller {
   //@tracked name = 'c1312asd';
   //@tracked password = '12345asdfghj';
 
-
   @action
   async login(e) {
 
-    //console.log('??? login ???');
-    //console.log('??? login ???', this.name);
-    //console.log('??? event login ???', event);
-
     let { username, password } = this;
-
-    //console.log('??? username ???', this.username);
-    //console.log('??? password ???', this.password);
 
     e.preventDefault();
     try {

@@ -8,11 +8,7 @@ export default Base.extend({
 
   async authenticate( username, password ) {
 
-    //console.log('username ');
-    //console.log(username);
-    //console.log(password);
-
-    //let name = "c1312asd";
+    //name = "c1312asd";
     //password = "12345asdfghj";
     const name = username;
 
@@ -34,11 +30,12 @@ export default Base.extend({
     });
 
     if(response.ok) {
-      return response.json();
-    } else {
-      let error = await response.text();
 
-      //console.log('NO Success:', BACKEND_URL);
+      return response.json();
+
+    } else {
+
+      let error = await response.text();
 
       throw new Error(error);
     }
