@@ -1,29 +1,38 @@
-Ember JS Frontend - SPA Single Page Application - 3.21 or newest version<br><br>
+<h1>Ember JS Frontend - SPA Single Page Application - 3.21 or newest version</h1><br><br>
+
+<p>
+  <b>CD CI - DevOps</b>
+  what to do to start with Ember ...<br><br>
+
+  starting a hetzner cloud server with debian Linux, Apache-Webserver or Nginx, Mariadb Mysql-Server<br><br>
+
+  building the deployment - odl school style<br><br>
+
+  Rsync over SSH with key authentication <br><br>
+
+  ember build
+  <br><br>
+  Built project successfully. Stored in "dist/".
+  <br><br>
+  rsync --progress -avz -e "ssh -i .ssh/id_rsa" /Users/user_name/ember_project/dist/  username@your-domain:/var/www/ember_project/
+  <br><br>
+
+  OR using GitHub / GitLab for modern deployment<br><br>
+</p>
 
 
-what to do to start with Ember ...<br><br>
-
-starting a hetzner cloud server with debian Linux, Apache-Webserver or Nginx, Mariadb Mysql-Server<br><br>
-
-building the deployment - odl school style<br><br>
-
-Rsync over SSH with key authentication <br><br>
-
-ember build
-<br><br>
-Built project successfully. Stored in "dist/".
-<br><br>
-rsync --progress -avz -e "ssh -i .ssh/id_rsa" /Users/user_name/ember_project/dist/  username@your-domain:/var/www/ember_project/
-<br><br>
+<h3>Ember todo</h3>
 
 ember install ember-bootstrap<br><br>
+
+ember install ember-simple-auth<br><br>
 
 ember g model user, event, image<br><br>
 
 ember g route user, event, image<br><br>
 
 
-############################## Backend JSON REST API with Laravel ###############################<br><br>
+<h1>Backend JSON REST API with Laravel</h1>
 
 composer global require laravel/installer
 <br><br>
@@ -52,22 +61,33 @@ php artisan make:json-api:resource posts
 <br><br>
 <br><br>
 <br><br>
+
 <br><br>
 some help
 <br><br>
+
+<h2>Ember</h2>
 using and learning with
-(https://www.balinterdi.com/rock-and-roll-with-emberjs/)
-<br><br><br>
-back to rassloff.info main page <a href="https://rassloff.info"> this way </a><br><br>
+<a href="https://balinterdi.com/rock-and-roll-with-emberjs/"> rock and roll with emberjs </a><br><br>
+
+<br>
 
 <br><br><br>
 for further / additional programming<br><br>
 
 <a href="https://embersteps.com/ember-simple-auth-access-current-user-model-hook/"> https://embersteps.com/ember-simple-auth-access-current-user-model-hook/ </a><br><br>
 
+<a href="https://www.youtube.com/watch?v=bSWN4_EbTPI"> Ember Simple Auth Tutorial on youtube </a><br><br>
+
+<a href="https://github.com/simplabs/ember-simple-auth"> Ember Simple Auth SourceCode on GitHub </a><br><br>
+<hr>
+
+back to rassloff.info main page <a href="https://rassloff.info"> this way </a><br><br>
+
+
 <br><br>
 
-remember remember ... dont use the newest node-version(15 or 16) it dosnt work with ember 
+remember remember ... dont use the newest node-version(15 or 16) it dosnt work with ember
 
 <div class="container-fluid">
   {{outlet}}
