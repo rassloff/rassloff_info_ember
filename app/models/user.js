@@ -4,13 +4,19 @@ export default class UserModel extends Model {
 
   @attr('string')
   email;
+
   @attr('string')
   firstName;
+
   @attr('string')
   lastName;
 
   @attr('string')
   name;
+
+  @attr('string')
+  username;
+
   @attr('string')
   password;
   // Relationships

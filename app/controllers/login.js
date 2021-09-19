@@ -7,38 +7,42 @@ export default class LoginController extends Controller {
   @service session;
 
   @tracked errror;
-  @tracked name; // = 'c1312asd';
-  @tracked password; // = '12345asdfghj';
-
-
+  //@tracked name = 'c1312asd';
+  //@tracked password = '12345asdfghj';
 
 
   @action
-  async login(event) {
+  async login(e) {
 
     //console.log('??? login ???');
     //console.log('??? login ???', this.name);
     //console.log('??? event login ???', event);
 
-    event.preventDefault();
+    let { username, password } = this;
+
+    //console.log('??? username ???', this.username);
+    //console.log('??? password ???', this.password);
+
+    e.preventDefault();
     try {
-      await this.session.authenticate('authenticator:token', this.name, this.password);
+      await this.session.authenticate('authenticator:token', username, password);
     } catch(error) {
       this.error = error;
     }
   }
 
-
-
-
-
-  @action
-  update(attr, event) {
-    this[attr] = event.target.value;
-  }
-
   @action
   invalidateSession() {
     this.session.invalidate();
+  }
+
+  @action
+  updateIdentification(e) {
+    this.username = e.target.value;
+  }
+
+  @action
+  updatePassword(e) {
+    this.password = e.target.value;
   }
 }

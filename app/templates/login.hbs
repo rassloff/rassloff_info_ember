@@ -2,9 +2,9 @@
 
 <form {{on "submit" this.login}}>
   <lable for="name">Username</lable>
-  <input type="text" name="name" value="c1312asd" {{on "change" (fn this.update "name")}}>
+  <input type="text" name="username" value={{this.username}}  {{on "change" this.updateIdentification}}>
   <lable for="password">Password</lable>
-  <input type="password" name="password" value="12345asdfghj" {{on "change" (fn this.update "password")}}>
+  <input type="password" name="password" value={{this.password}}  {{on "change" this.updatePassword}}>
   <input type="submit" value="login">
 </form>
 
