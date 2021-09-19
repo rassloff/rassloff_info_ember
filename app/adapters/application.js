@@ -8,17 +8,19 @@ import { pluralize } from 'ember-inflector';
 
 @classic
 export default class Application extends JSONAPIAdapter {
-  @service
-  auth;
+  @service session;
+  //@service
+  //auth;
 
   coalesceFindRequests = true;
   host = config.api.host;
   namespace = config.api.namespace;
 
-  @computed('auth.accessToken')
+  //@computed('auth.accessToken') // auth kommt glaub ich ausm grizzel
+  @computed('session.accessToken')
   get headers() {
     let headers = {};
-    headers['Authorization'] = `Bearer ${this.auth.accessToken}`;
+    headers['Authorization'] = `Bearer ${this.session.accessToken}`;
     return headers;
   }
 
